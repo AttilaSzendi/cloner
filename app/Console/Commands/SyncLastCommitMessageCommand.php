@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Jobs\SyncLastCommitMessage;
 use App\Models\Repository;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class SyncLastCommitMessageCommand extends Command
 {

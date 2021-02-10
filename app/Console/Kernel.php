@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('repository:sync-last-commit-messages')->hourly();
+         $schedule->command('repository:sync-last-commit-messages')->everyFiveMinutes();
     }
 
     /**
